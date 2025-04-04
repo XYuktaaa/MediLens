@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediLens Assistant - AI-Powered Healthcare Solutions</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="/static/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">MediLens</div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('home') }}" class="active">Home</a></li>
+        <li><a href="{{ url_for('scanner_page') }}">Prescription Scanner</a></li>
+        <li><a href="report.html">Report Generation</a></li>
+        <li><a href="{{ url_for('stores_page') }}">Medical Stores</a></li>
+        <li><a href="{{ url_for('contact_page') }}">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>AI-Powered Healthcare Solutions</h1>
+          <p>
+            Revolutionizing healthcare with advanced AI technology for
+            prescription scanning, report generation, and medical store locator
+            services.
+          </p>
+          <a href="scanner.html" class="cta-button">Get Started</a>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="feature-card">
+          <i class="fas fa-prescription"></i>
+          <h3>Prescription Scanner</h3>
+          <p>Upload and interpret prescriptions instantly with AI technology</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-file-medical-alt"></i>
+          <h3>Report Generation</h3>
+          <p>Generate detailed medical reports with AI analysis</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-clinic-medical"></i>
+          <h3>Store Locator</h3>
+          <p>Find nearby medical stores and check medicine availability</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="scanner.html">Prescription Scanner</a></li>
+            <li><a href="report.html">Report Generation</a></li>
+            <li><a href="stores.html">Medical Stores</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">AI Analysis</a></li>
+            <li><a href="#">Medical Reports</a></li>
+            <li><a href="#">Store Locator</a></li>
+            <li><a href="#">Healthcare Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <ul>
+            <li>Email: support@medilens-assistant.com</li>
+            <li>Phone: +1 (555) 123-4567</li>
+            <li>Address: 123 Healthcare Ave</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 MedAI Assistant. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
